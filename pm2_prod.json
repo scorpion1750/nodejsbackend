@@ -1,0 +1,16 @@
+[{
+  "name"             : "Server",
+  "script"           : "bin/www",
+  "error_file"       : "./log/server-err.log",
+  "out_file"         : "./log/server-err.log",
+  "run_as_user"      : "ubuntu",
+  "run_as_group"     : "ubuntu",
+  "exec_mode"        : "cluster",
+  "retain":7,
+  "instances"         : 4,
+  "log_date_format" :"YYYY-MM-DD HH:mm Z",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 1337
+  }
+}]
